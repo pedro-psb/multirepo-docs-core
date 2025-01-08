@@ -1,0 +1,47 @@
+################
+### PULPCORE ###
+################
+# Minimal setup with pulpcore only.
+
+	[[ pulpcore ]]
+
+path = 'pulpcore/CHANGES.md'
+data = '''
+# Changelog
+
+## x.y.z (YYYY-MM-DD)
+
+#### Features
+- feature-changes-check
+
+#### Bugfixes
+- bugfixes-changes-check
+'''
+
+	[[ pulpcore ]]
+
+path = 'pulpcore/index.md'
+data = '''
+# Welcome to Pulpcore
+
+pulpcore-index-check
+'''
+
+	[[ pulpcore ]]
+
+path = 'pulpcore/guides/guides1.md'
+data = '''
+# Guide1
+
+guide1-check
+'''
+
+	[[ pulpcore ]]
+
+path = 'pulpcore/guides/guides2.md'
+
+data = '''
+# Guide2
+
+guide2-check
+'''

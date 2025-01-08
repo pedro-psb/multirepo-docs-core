@@ -85,7 +85,10 @@ class PulpDocs:
             return
         subprocess.run(cmd, env=env)
 
-    def build(self, config: Config, dry_run: bool = False):
+    def build(
+        self, config: Config, dry_run: bool = False, target: t.Optional[Path] = None
+    ):
+        # TODO: implement target
         # Process option to pass to command
         cmd = ["mkdocs", "build"]
 
