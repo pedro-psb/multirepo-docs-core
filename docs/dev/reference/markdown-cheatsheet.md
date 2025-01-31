@@ -131,6 +131,36 @@ pulp file repository update --name myrepo --retained-versions 1
 ```
 ````
 
+### Images
+
+The image paths can be relative or absolute:
+
+Simple:
+
+```markdown
+# Relative path. Image is in the same folder
+![OperatorHub tab](1.png "Pulp on OperatorHub tab")
+
+# Absolute path. Specify the path with 'site:'
+![Pulp 101](site:pulpcore/docs/assets/images/pulp-101.png)
+```
+
+With subtitle:
+
+```markdown
+# Subtitle on top
+<figure markdown="span">
+  <figcaption>Find Pulp  at `OperatorHub > Integration & Delivery`.</figcaption>
+  ![OperatorHub tab](1.png "Pulp on OperatorHub tab")
+</figure>
+
+# Subtitle at bottom
+<figure markdown="span">
+  <figcaption>Find Pulp  at `OperatorHub > Integration & Delivery`.</figcaption>
+  ![OperatorHub tab](1.png "Pulp on OperatorHub tab")
+</figure>
+```
+
 ### Admonitions
 
 [See mkdocs-material](https://squidfunk.github.io/mkdocs-material/reference/admonitions/#supported-types)
